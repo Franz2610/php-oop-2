@@ -1,5 +1,4 @@
 <?php
-include __DIR__ .'/productAnimal.php';
 class Product {
     public 
     $name, $price, $image;

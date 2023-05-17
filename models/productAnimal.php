@@ -1,5 +1,6 @@
 <?php
-include __DIR__ . '/product.php';
+include __DIR__ .'/product.php';
+
 class productAnimal extends Product {
     public $type;
     public function __construct(string $name, int $price, $image, $type){

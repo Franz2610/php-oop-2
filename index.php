@@ -5,11 +5,14 @@ include __DIR__ .'/database/db.php';
 ?>
 
 <main>
-<div class="col">
+<div class="col-4">
     <div class="row">
         <div class="card">
         <?php foreach ($products as $product) : ?>
             <h1> <?php echo $product->name ?> </h1>
+            <div class="card-image">
+                <img src="<?php echo $product->image?>" alt="">
+            </div>
         </div>
 
     </div>
