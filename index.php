@@ -1,6 +1,6 @@
 <?php
 include __DIR__ . '/view/header.php';
-include __DIR__ .'/models/product.php';
+
 include __DIR__ .'/database/db.php';
 ?>
 
