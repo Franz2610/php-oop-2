@@ -1,34 +1,24 @@
 <?php
-
 include __DIR__ . '/view/header.php';
-
-
-foreach($products as $product)
-{?>
-
-
-<!--<div>
-    <h1>
-        <?php echo ?>
-    </h1>
-    <h2>
-        
-        <?php echo ?>
-    </h2>
-    <h3>
-        
-        <?php echo ?>
-        
-    </h3>
-    <h4>
-        
-        <?php echo ?>
-    </h4>
-</div>-->
-
-<?php
-}
+include __DIR__ .'/models/product.php';
+include __DIR__ .'/database/db.php';
 ?>
+
+<main>
+<div class="col">
+    <div class="row">
+        <div class="card">
+        <?php foreach ($products as $product) : ?>
+            <h1> <?php echo $product->name ?> </h1>
+        </div>
+
+    </div>
+    <?php endforeach; ?>
+</div>
+</main>
+
+
+
 
 <?php
 include __DIR__ . '/view/footer.php';
