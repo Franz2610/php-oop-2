@@ -22,6 +22,9 @@ include __DIR__ .'/database/db.php';
                     <p>Accessorio: </p> <i class="fa-solid fa-dog fs-3 p-2 rounded-circle bg-success"></i>
                 <?php endif;  ?>
                 <?php endif;  ?>
+                <?php if (property_exists($product, 'weight')): ?>
+                <span> <?php echo  $product->getWeight() ?></span>
+                <?php endif;  ?> 
         </div>
         </div>
     </div>
